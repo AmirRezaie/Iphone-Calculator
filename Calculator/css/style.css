@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    background-color: rgb(235, 235, 235);
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.calc{
+    width: 26%;
+    height: 63vh;
+    background-color: #000000;
+    margin: 10% auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 3%;
+}
+.screen{
+    width: 100%;
+    height: 13vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+#displayResult{
+    width: 97%;
+    height: 13vh;
+    text-align: right;
+    line-height: 13vh;
+    margin-right: 1vw;
+    font-size: 3em;
+    color: #ffffff;
+    background-color: #000000;
+    border-style: none;
+}
+.nums{
+    width: 100%;
+    height: 51vh;
+}
+.column-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.items{
+    width: 85%;
+    height: 8vh;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50%;
+    margin: 15% 0 0 10%;
+    border-style: none;
+}
+input[type="button"]
+{
+    font-size: 1.4em;
+}
+.column-grid-empty-cell{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    margin-left: 20%;
+}
+.item2{
+    width: 85%;
+    height: 8vh;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50%;
+    margin: 15% 0 0 10%;
+    border-style: none;
+}
+.column-grid-last-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 100%;
+    margin-left: 20%;
+}
+.zero{
+    margin-top: 10%!important;
+    border-radius: 45%;
+}
+.operation-color{
+    background-color: #f58720;
+}
+.nums-color{
+    background-color: #8a8a8a;
+}

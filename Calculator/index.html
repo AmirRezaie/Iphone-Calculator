@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Create Professional Calculator"/>
+<link rel="stylesheet" href="css/style.css">
+<title>Calculator</title>
+</head>
+<body>
+    <div class="calc">
+        <form name="form" id="myForm">
+            <div class="screen">
+                <input type="text" placeholder="0" name="displayResult" id="displayResult">
+            </div>
+            <div class="nums">
+                <div class="column-grid">
+                    <input type="button" class="items" value="C" onclick="reset()">
+                    <input type="button" class="items" value="^" onclick="mathCalc('pow')">
+                    <input type="button" class="items" value="abs" onclick="mathCalc('abs')">
+                    <input type="button" class="items" value="&radic;" onclick="mathCalc('sqrt')">
+                    <input type="button" class="items operation-color" value="‍/" name="division" onclick="addToCalc(division.value)">
+                </div>
+                <div class="column-grid-empty-cell">
+                    <input type="button" class="item2 nums-color" value="7" name="b7" onclick="addToCalc(b7.value)">
+                    <input type="button" class="item2 nums-color" value="8" name="b8" onclick="addToCalc(b8.value)">
+                    <input type="button" class="item2 nums-color" value="9" name="b9" onclick="addToCalc(b9.value)">
+                    <input type="button" class="item2 operation-color" value="*" name="multi" onclick="addToCalc(multi.value)">
+                </div>
+                <div class="column-grid-empty-cell">
+                    <input type="button" class="item2 nums-color" value="4" name="b4" onclick="addToCalc(b4.value)">
+                    <input type="button" class="item2 nums-color" value="5" name="b5" onclick="addToCalc(b5.value)">
+                    <input type="button" class="item2 nums-color" value="6" name="b6" onclick="addToCalc(b6.value)">
+                    <input type="button" class="item2 operation-color" value="-" name="sub" onclick="addToCalc(sub.value)">
+                </div>
+                <div class="column-grid-empty-cell">
+                    <input type="button" class="item2 nums-color" value="1" name="b1" onclick="addToCalc(b1.value)">
+                    <input type="button" class="item2 nums-color" value="2" name="b2" onclick="addToCalc(b2.value)">
+                    <input type="button" class="item2 nums-color" value="3" name="b3" onclick="addToCalc(b3.value)">
+                    <input type="button" class="item2 operation-color" value="+" name="add" onclick="addToCalc(add.value)">
+                </div>
+                <div class="column-grid-last-row">
+                    <input type="button" class="item2 zero nums-color" value="0" name="b0" onclick="addToCalc(b0.value)">
+                    <input type="button" class="item2 nums-color" value="." name="dot" onclick="addToCalc(dot.value)">
+                    <input type="button" class="item2 operation-color" value="=" onclick="finalize()">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
